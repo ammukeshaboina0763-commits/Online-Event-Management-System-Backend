@@ -40,6 +40,12 @@ function EventForm({ onEventCreated }) {
 
         } catch (error) {
             console.log('Error creating event:', error);
+              if (error.response) {
+            console.log('Status:', error.response.status);
+            console.log('Response:', error.response.data);
+        } else {
+            console.log('Error:', error.message);
+        }
         }
     };
 
