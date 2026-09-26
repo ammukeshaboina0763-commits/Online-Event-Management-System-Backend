@@ -12,10 +12,10 @@ function EventList({ events, loading }) {
 
     // Render events
     return (
-        <div>
+        <div >
             {events.map((event) => (
-                <div key={event._id}>
-                    <h2>{event.title}</h2>
+                <div key={event._id} className=" w-full border boredr-red-300 rounded-lg ">
+                    <b>{event.title}</b>
 
                     <p>{event.description}</p>
 

@@ -50,7 +50,8 @@ function EventForm({ onEventCreated }) {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className='space-y-5 '>
+            
 
             <input
                 type="text"
@@ -59,6 +60,7 @@ function EventForm({ onEventCreated }) {
                 value={formData.title}
                 onChange={handleChange}
                 required
+                className="w-full border border-blue-300 rounded-lg px-10 py-3   "
             />
 
             <textarea
@@ -67,6 +69,8 @@ function EventForm({ onEventCreated }) {
                 value={formData.description}
                 onChange={handleChange}
                 required
+                className="w-full border border-blue-300 rounded-lg px-10 py-1   "
+
             />
 
             <input
@@ -76,6 +80,8 @@ function EventForm({ onEventCreated }) {
                 value={formData.category}
                 onChange={handleChange}
                 required
+                className="w-full border border-blue-300 rounded-lg px-10 py-3   "
+
             />
 
             <input
@@ -85,6 +91,8 @@ function EventForm({ onEventCreated }) {
                 value={formData.location}
                 onChange={handleChange}
                 required
+                className="w-full border border-blue-300 rounded-lg px-10 py-3   "
+
             />
 
             <input
@@ -93,9 +101,11 @@ function EventForm({ onEventCreated }) {
                 value={formData.date}
                 onChange={handleChange}
                 required
+                className="w-full border border-blue-300 rounded-lg px-10 py-3   "
+
             />
 
-            <button type="submit">
+            <button type="submit"   className='w-full border border-blue-300 px-10 py-3 rounded-lg' >
                 Create Event
             </button>
 
